@@ -4,18 +4,15 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 
-export default function Blog({ blogs }) {
+export default function Home({ blogs }) {
   return (
     <div className={styles['container']}>
       <Head>
         <title>Demo Blog</title>
       </Head>
-      <h1 className={styles['header']}>
-        Sture Halvorsens legat for musikkstuderende i Finnmark
-      </h1>
+      <h1 className={styles['header']}>Welcome to my blog</h1>
       <p className={styles['subtitle']}>
-        Dette er ett testmiljø der utvikler vil teste funksjonalitet og design
-        før ferdig produksjon publiseres
+        This is a subtitle idk what to type here
       </p>
       <ul className={styles['blog-list']}>
         {blogs.map((blog) => (
@@ -31,7 +28,7 @@ export default function Blog({ blogs }) {
 }
 
 export async function getStaticProps() {
-  // List of files in blogs folder
+  // List of files in blgos folder
   const filesInBlogs = fs.readdirSync('./content/blogs')
 
   // Get the front matter and slug (the filename without .md) of all files

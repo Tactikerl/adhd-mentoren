@@ -1,131 +1,15 @@
 .container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-image: url('../public/images/Instrumentbytte.png'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
-  position: relative;
-}
-.logo {
-  vertical-align: text-top;
-  background-color: #00112f;
-  opacity: 0.9;
-  width: 100%;
+  padding-top: 10rem;
+  color: #445566;
 }
 
-.logo-text {
+.header {
   font-size: 3rem;
-  color: white;
 }
 
-.menuContainer {
-  vertical-align: text-bottom;
-}
-.menu a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
-
-.mexicanWall {
-  position: sticky;
-  background-image: url(https://www.w3schools.com/cssref/paper.gif);
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.mexicanHedge {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.mexicanImage {
-  width: 100%;
-  height: auto;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.menu li {
-  list-style: none;
-  flex: 1 1 auto;
-}
-
-.content {
-  margin: 2rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 70vw;
-  margin: 25px;
-}
-
-.contentList {
-  list-style: none;
-  padding: 0;
-}
-
-.contentList li {
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
-}
-
-.contentList li:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.content h2,
-.content h3 {
-  color: white;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.galleryList {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.imageContainer {
-  flex: 1 1 25%;
-  padding: 1rem;
-}
-
-.textContainer {
-  flex: 2 2 75%;
-}
-
-.contentImg {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  object-fit: cover;
-}
-
-.content p {
-  color: white;
-  font-size: 1.5rem;
-  padding: 1rem;
+.subtitle {
+  margin-bottom: 2rem;
 }
 
 .blog-list {
@@ -137,46 +21,4 @@
 .blog-list a {
   color: rgb(4, 165, 165);
   text-decoration: underline;
-}
-
-.profileList li {
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
-}
-
-.button {
-  letter-spacing: 0;
-}
-
-.button:hover,
-.button:active {
-  letter-spacing: 5px;
-}
-
-.button:after,
-.button:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: ' ';
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.button:hover:after,
-.button:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.button:hover:after {
-  bottom: auto;
-  top: 0;
-  width: 70%;
 }
